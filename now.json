@@ -3,7 +3,7 @@
     "builds": [{ "src": "index.js", "use": "@vercel/node" }],
     "routes": [
       {
-        "src": "/finance/chart/:ativo",
+        "src": "/finance",
         "dest": "/index.js",
         "methods": ["GET"]
       }
