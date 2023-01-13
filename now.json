@@ -3,6 +3,11 @@
     "builds": [{ "src": "index.js", "use": "@vercel/node" }],
     "routes": [
       {
+          "src": "/PETR4.SA",
+          "dest": "/index.js",
+          "methods": ["GET"]
+      },
+      {
         "src": "/finance/chart",
         "dest": "/index.js",
         "methods": ["GET"]
