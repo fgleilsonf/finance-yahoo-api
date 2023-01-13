@@ -7,6 +7,10 @@ const port = 5000;
 // Body parser
 app.use(express.urlencoded({ extended: false }));
 
+app.use(cors({
+  origin: '*'
+}));
+
 app.get("/", (req, res) => {
   res.send("Welcome to a basic express App");
 });
