@@ -11,8 +11,8 @@ app.get("/", (req, res) => {
   res.send("Welcome to a basic express App");
 });
 
-app.get(":ativo", async (req, res) => {
-  const ativo = req.params.ativo;
+app.get("/PETR4.SA", async (req, res) => {
+  const ativo = 'PETR4.SA';
 
   const BASE_URL = 'https://query2.finance.yahoo.com/v8';
   const result = await axios.get(`${BASE_URL}/finance/chart/${ativo}`);
