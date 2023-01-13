@@ -27,6 +27,5 @@ app.post("/user", (req, res) => {
 
 // Listen on port 5000
 app.listen(port, () => {
-  console.log(`Server is booming on port 5000
-Visit http://localhost:5000`);
+  console.log(`Server is booming on port 5000 Visit http://localhost:5000`);
 });
